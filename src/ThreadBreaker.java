@@ -24,7 +24,7 @@ public class ThreadBreaker implements Runnable{
     public static void main(String[] args) {
         List<Thread> threads = new ArrayList<>();
         for (int i = 0; i < 12; i++) {
-            threads.add(new Thread(new ThreadBreaker("Thread" + i)));
+            threads.add(new Thread(new ThreadBreaker("Thread " + i)));
         }
         for( Thread t : threads ) {
             t.start();
